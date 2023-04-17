@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Window Substring</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="root grid place-items-center w-full h-[100vh] my-[2rem]">
+    <div class="rounded-xl mx-[1rem] px-[2rem] py-[2rem] border-2 border-black">
+      <h2 class="font-bold  text-[24px]">Validar la más corta cadena de texto</h2>
+      <form id="form-value" class="grid gap-[10px] tex-center place-items-center mt-[20px]">
+        <label for="str-arr1">Ingrese la cadena de texto a procesar: </label>
+        <input id="str-arr1" name="str-arr1" maxlength="30"
+          class="values w-full border-2 border-black rounded-full px-[10px]" placeholder="Ingresa el texto" type="text"
+          required>
+        <label for="str-arr2">Ingrese el subtexto a validar: </label>
+        <input id="str-arr2" name="str-arr2" maxlength="29"
+          class="values w-full border-2 border-black rounded-full px-[10px]" placeholder="Ingresa el texto" type="text"
+          required>
+        <button type="submit" class="btn first-btn mt-[20px] w-full">Ingresar</button>
+      </form>
+      <div class="to-edit px-[10px]">
+      </div>
+    </div>
+  </div>
+  <style>
+    .to-edit {
+      display: grid;
+      place-items: center;
+      padding: 10px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .btn {
+      border-radius: 50px;
+      padding: 0.5rem 0;
+      border: 2px black solid;
+      transition: .5s background-color;
+    }
+
+    .btn:hover {
+      background-color: lightblue;
+    }
+  </style>
+  <script src="task2.js"></script>
+</body>
+
+</html>
